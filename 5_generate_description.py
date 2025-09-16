@@ -30,7 +30,7 @@ def generate_prompt(df, race, attribute_descriptions, num_attributes=10):
             print(f"{attr}: {score}")
     return prompt_content
 
-api_key = "AIzaSyBg7sT26VXKFzuqK_mc0TfZUGhBhKru0K4"
+api_key = ""
 genai.configure(api_key=api_key)
 
 def call_gemini_api(prompt):
@@ -87,3 +87,4 @@ print(description2)
 
 print("\nGemini API Comparison Response:")
 print(comparison_response)
+
